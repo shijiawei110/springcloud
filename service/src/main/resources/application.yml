@@ -2,12 +2,20 @@ server:
   port: 1001
 
 eureka:
+  environment: 施嘉威的注册中心
   instance:
     hostname: localhost
+#    心跳间隔时间,单位秒
+    lease-renewal-interval-in-seconds : 5
   client:
     registerWithEureka: false
     fetchRegistry: false
+#关闭保护模式(会踢掉挂掉的服务)
+  server:
+    enable-self-preservation: false
+    #剔除失效服务间隔 单位毫秒
+    eviction-interval-timer-in-ms: 5000
 
 spring:
   application:
-    name: eureka_server
+    name: eureka-server

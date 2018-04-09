@@ -2,8 +2,11 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:1001/eureka/
+  instance:
+    lease-renewal-interval-in-seconds : 5
+    lease-expiration-duration-in-seconds : 5
 server:
   port: 2002
 spring:
   application:
-    name: eureka_client
+    name: eureka-client

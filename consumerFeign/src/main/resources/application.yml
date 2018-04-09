@@ -7,3 +7,8 @@ server:
 spring:
   application:
     name: eureka_consumer_feign
+
+#开启feign对hystrix的支持
+feign:
+  hystrix:
+    enabled: true

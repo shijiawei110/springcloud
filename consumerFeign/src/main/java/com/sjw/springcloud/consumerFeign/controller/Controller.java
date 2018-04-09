@@ -1,6 +1,7 @@
 package com.sjw.springcloud.consumerFeign.controller;
 
 import com.sjw.springcloud.consumerFeign.bindClient.ClientProxy;
+import com.sjw.springcloud.consumerFeign.service.ServiceAll;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,10 +16,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
 
     @Autowired
-    ClientProxy clientProxy;
+    private ServiceAll service;
 
     @GetMapping("/consumer")
-    public String dc() {
-        return clientProxy.consumer();
+    public String consumer() {
+        return service.consumer();
     }
 }

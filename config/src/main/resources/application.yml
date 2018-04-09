@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/shijiawei110/springconfig.git
+          username: shijiawei110
+          password: 81356394
+server:
+  port: 1101
