@@ -1,4 +1,4 @@
-package com.sjw.springcloud.clientOne.controller;
+package com.sjw.springcloud.clientTwo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -20,7 +20,7 @@ public class Controller {
     @GetMapping("/dc")
     public String dc() {
         String services = "Services: " + discoveryClient.getServices();
-        System.out.println("服务节点【1】被消费 : "+services);
+        System.out.println("服务节点【2】被消费 : "+services);
         return services;
     }
 }
