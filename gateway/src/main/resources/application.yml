@@ -1,12 +1,14 @@
+spring:
+  application:
+    name: gateway
+
+server:
+  port: 9001
+
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:1001/eureka/
-server:
-  port: 3001
-spring:
-  application:
-    name: eureka-consumer-feign
 
 #开启feign对hystrix的支持
 feign:

@@ -23,7 +23,7 @@ public class ServiceAll {
     private ClientProxy clientProxy;
 
     public String consumer() {
-        return clientProxy.consumer();
+        return "开放服务节点【1】  "+clientProxy.consumer();
     }
 
 }

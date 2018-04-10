@@ -1,6 +1,6 @@
-package com.sjw.springcloud.consumerFeign.controller;
+package com.sjw.springcloud.consumerFeignBackUp.controller;
 
-import com.sjw.springcloud.consumerFeign.service.ServiceAll;
+import com.sjw.springcloud.consumerFeignBackUp.service.ServiceAll;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
