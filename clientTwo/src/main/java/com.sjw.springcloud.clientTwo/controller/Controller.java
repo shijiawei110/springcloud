@@ -19,8 +19,15 @@ public class Controller {
 
     @GetMapping("/dc")
     public String dc() {
-        String services = "Services: " + discoveryClient.getServices();
+        String services = "服务【dc】 节点【2】 被消费";
         System.out.println("服务节点【2】被消费 : "+services);
+        return services;
+    }
+
+    @GetMapping("/dctwo")
+    public String dc2() {
+        String services = "服务【dctwo】 节点【1】 被消费";
+        System.out.println("服务【dctwo】节点【1】被消费 : "+services);
         return services;
     }
 }
